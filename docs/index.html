@@ -8,12 +8,14 @@
 </head>
 <body>
 
-<div class="bubble bubble1"></div>
-<div class="bubble bubble2"></div>
-<div class="bubble bubble3"></div>
-<div class="bubble bubble4"></div>
-<div class="bubble bubble5"></div>
-<div class="bubble bubble6"></div>
+<!-- 배경 물방울 -->
+<div class="bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
 <header class="header">
     <div class="nav">
@@ -28,76 +30,126 @@
     </div>
 </header>
 
+
 <main>
 
     <!-- HERO -->
     <section class="hero">
+        <div class="hero-inner">
 
-        <div class="hero-bg"></div>
+            <div class="hero-text reveal">
+                <p class="hero-label">BACKEND DEVELOPER</p>
 
-        <div class="hero-inner reveal">
+                <h1>
+                    문제를 분석하고<br>
+                    <strong>해결하는 개발자</strong>
+                </h1>
 
-            <span class="badge">BACKEND DEVELOPER</span>
+                <p class="hero-description">
+                    Java와 Spring Boot를 기반으로 웹 서비스를 개발하며<br>
+                    기능 구현부터 인증·인가와 데이터 접근 제어까지 고민합니다.
+                </p>
 
-            <h1>
-                문제를 분석하고<br>
-                <strong>해결하는 개발자</strong>
-            </h1>
+                <div class="hero-stack">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Spring Security</span>
+                    <span>MyBatis</span>
+                    <span>Oracle</span>
+                </div>
 
-            <p class="hero-text">
-                Java와 Spring Boot를 기반으로<br>
-                안정적인 웹 서비스를 개발합니다.
-            </p>
-
-            <div class="hero-tech">
-                <span class="java">Java</span>
-                <span class="spring">Spring Boot</span>
-                <span class="security">Spring Security</span>
-                <span class="oracle">Oracle</span>
-                <span class="mybatis">MyBatis</span>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">PROJECTS</a>
+                    <a href="https://github.com/mundaewon1" target="_blank" class="btn white">GITHUB</a>
+                </div>
             </div>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-main">Projects</a>
-                <a href="https://github.com/mundaewon1" target="_blank" class="btn-sub">GitHub</a>
+            <!-- 프로필 -->
+            <div class="profile-card reveal">
+
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="문대원 프로필 사진">
+                </div>
+
+                <div class="profile-info">
+                    <p class="profile-role">Backend Developer</p>
+                    <h2>문대원</h2>
+
+                    <p class="profile-description">
+                        기능의 동작뿐 아니라<br>
+                        권한과 예외 상황까지 생각하며 개발합니다.
+                    </p>
+
+                    <div class="profile-tags">
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>Oracle</span>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
         <div class="scroll-down">
-            <span>SCROLL</span>
-            <i></i>
+            <span></span>
+            SCROLL
         </div>
-
     </section>
 
 
     <!-- ABOUT -->
     <section id="about" class="section">
 
-        <div class="section-head reveal">
-            <span>01</span>
+        <div class="section-heading reveal">
+            <p>01</p>
             <h2>About Me</h2>
         </div>
 
-        <div class="about-box reveal">
+        <div class="about-grid">
 
-            <div class="about-title">
-                <p>BACKEND DEVELOPER</p>
+            <div class="about-main card reveal">
+                <span class="small-label">WHO I AM</span>
+
                 <h3>
-                    기능 구현을 넘어<br>
-                    <strong>안전한 서비스를 고민합니다.</strong>
+                    기능을 구현하는 것에서<br>
+                    <strong>끝나지 않는 개발</strong>을 고민합니다.
                 </h3>
+
+                <p>
+                    Java와 Spring Boot를 중심으로 웹 애플리케이션을 개발하고 있습니다.
+                    프로젝트를 진행하면서 CRUD 구현뿐만 아니라 인증과 권한 처리,
+                    데이터 접근 제어, 예외 상황 등을 직접 다뤄보며
+                    안정적인 서비스 구조에 관심을 갖게 되었습니다.
+                </p>
             </div>
 
-            <div class="about-description">
-                <p>
-                    Java와 Spring Boot를 중심으로 웹 서비스를 개발하고 있습니다.
-                </p>
-                <p>
-                    인증·인가와 사용자별 데이터 접근 제어를 구현하고,
-                    프로젝트에서 발견한 IDOR 취약점을 분석하고 개선한 경험이 있습니다.
-                </p>
+            <div class="about-side card reveal">
+
+                <div class="about-item">
+                    <span>01</span>
+                    <div>
+                        <strong>Backend</strong>
+                        <p>Java · Spring Boot</p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <span>02</span>
+                    <div>
+                        <strong>Security</strong>
+                        <p>인증 · 인가 · 접근 제어</p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <span>03</span>
+                    <div>
+                        <strong>Database</strong>
+                        <p>Oracle · MyBatis · SQL</p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -108,15 +160,15 @@
     <!-- SKILLS -->
     <section id="skills" class="section skills-section">
 
-        <div class="section-head reveal">
-            <span>02</span>
+        <div class="section-heading reveal">
+            <p>02</p>
             <h2>Tech Stack</h2>
         </div>
 
         <div class="skills-container">
 
-            <div class="skill-block reveal">
-                <div class="skill-name">
+            <div class="skill-group reveal">
+                <div class="skill-title">
                     <span>01</span>
                     <h3>Backend</h3>
                 </div>
@@ -131,8 +183,8 @@
             </div>
 
 
-            <div class="skill-block reveal">
-                <div class="skill-name">
+            <div class="skill-group reveal">
+                <div class="skill-title">
                     <span>02</span>
                     <h3>Database</h3>
                 </div>
@@ -146,8 +198,8 @@
             </div>
 
 
-            <div class="skill-block reveal">
-                <div class="skill-name">
+            <div class="skill-group reveal">
+                <div class="skill-title">
                     <span>03</span>
                     <h3>Frontend</h3>
                 </div>
@@ -163,10 +215,10 @@
             </div>
 
 
-            <div class="skill-block reveal">
-                <div class="skill-name">
+            <div class="skill-group reveal">
+                <div class="skill-title">
                     <span>04</span>
-                    <h3>Tools</h3>
+                    <h3>Development</h3>
                 </div>
 
                 <div class="skill-buttons">
@@ -174,22 +226,9 @@
                     <span class="skill github">GitHub</span>
                     <span class="skill linux">Linux</span>
                     <span class="skill aws">AWS</span>
-                    <span class="skill intellij">IntelliJ</span>
-                    <span class="skill vscode">VS Code</span>
-                </div>
-            </div>
-
-
-            <div class="skill-block reveal">
-                <div class="skill-name">
-                    <span>05</span>
-                    <h3>Other</h3>
-                </div>
-
-                <div class="skill-buttons">
                     <span class="skill python">Python</span>
                     <span class="skill django">Django</span>
-                    <span class="skill numpy">NumPy</span>
+                    <span class="skill flutter">Flutter</span>
                 </div>
             </div>
 
@@ -201,22 +240,25 @@
     <!-- PROJECT -->
     <section id="projects" class="section">
 
-        <div class="section-head reveal">
-            <span>03</span>
+        <div class="section-heading reveal">
+            <p>03</p>
             <h2>Projects</h2>
         </div>
+
 
         <article class="project-card reveal">
 
             <div class="project-top">
 
                 <div>
-                    <span class="project-type">TEAM PROJECT</span>
+                    <p class="project-label">TEAM PROJECT</p>
                     <h3>MOIT</h3>
-                    <p>모임 관리 플랫폼</p>
+                    <p class="project-name">모임 관리 플랫폼</p>
                 </div>
 
-                <a href="https://github.com/mundaewon1" target="_blank" class="github-link">
+                <a href="https://github.com/mundaewon1"
+                   target="_blank"
+                   class="github-link">
                     GitHub ↗
                 </a>
 
@@ -224,8 +266,9 @@
 
 
             <p class="project-description">
-                모임 생성, 회원 관리, 문의, 답변, 알림 및 관리자 기능을 제공하는
-                웹 서비스
+                모임 생성과 회원 관리, 문의사항, 답변, 알림 등의 기능을 제공하는
+                웹 서비스입니다. Spring Boot 기반 REST API와 Spring Security를
+                활용하여 사용자 역할에 따른 접근 권한을 처리했습니다.
             </p>
 
 
@@ -239,30 +282,45 @@
             </div>
 
 
-            <div class="project-info">
+            <div class="project-grid">
 
-                <div class="info-column">
-                    <span class="info-title">담당 기능</span>
+                <div class="project-box">
+                    <p>FEATURE</p>
+                    <h4>주요 기능</h4>
+
+                    <ul>
+                        <li>회원 및 모임 관리</li>
+                        <li>문의사항 및 답변</li>
+                        <li>알림 기능</li>
+                        <li>관리자 페이지</li>
+                        <li>문의 AI 분류</li>
+                    </ul>
+                </div>
+
+
+                <div class="project-box">
+                    <p>MY ROLE</p>
+                    <h4>담당 기능</h4>
 
                     <ul>
                         <li>Q&A CRUD</li>
-                        <li>문의 · 답변 권한 처리</li>
+                        <li>문의·답변 권한 처리</li>
                         <li>관리자 권한 검증</li>
-                        <li>검색 · 페이지네이션</li>
+                        <li>검색 및 페이지네이션</li>
                         <li>알림 이벤트 처리</li>
                     </ul>
                 </div>
 
 
-                <div class="info-column">
-                    <span class="info-title">주요 경험</span>
+                <div class="project-box highlight">
+                    <p>KEY POINT</p>
+                    <h4>Security</h4>
 
                     <ul>
-                        <li>IDOR 취약점 분석 및 개선</li>
+                        <li>IDOR 취약점 분석</li>
                         <li>사용자별 데이터 접근 제어</li>
-                        <li>Spring Security 인증 · 인가</li>
-                        <li>AI 문의 분류</li>
-                        <li>트랜잭션 이후 알림 처리</li>
+                        <li>Spring Security 인증·인가</li>
+                        <li>관리자 권한 분리</li>
                     </ul>
                 </div>
 
@@ -271,24 +329,25 @@
         </article>
 
 
-        <article class="project-card small-project reveal">
+        <article class="project-card secondary-project reveal">
 
-            <div class="project-top">
-
-                <div>
-                    <span class="project-type">PRACTICE PROJECT</span>
-                    <h3>Python & Django</h3>
-                    <p>Python 웹 개발 학습 프로젝트</p>
-                </div>
-
+            <div>
+                <p class="project-label">PRACTICE PROJECT</p>
+                <h3>Python & Django</h3>
+                <p class="project-name">Python 웹 개발 학습</p>
             </div>
+
+            <p class="project-description">
+                Python 문법과 데이터 처리부터 Django 기반 웹 개발까지 학습하며
+                서버 구조와 데이터 처리 방식을 익혔습니다.
+            </p>
 
             <div class="project-stack">
                 <span class="python">Python</span>
                 <span class="django">Django</span>
-                <span class="numpy">NumPy</span>
                 <span class="html">HTML</span>
                 <span class="css">CSS</span>
+                <span class="python">NumPy</span>
             </div>
 
         </article>
@@ -297,45 +356,40 @@
 
 
     <!-- EXPERIENCE -->
-    <section class="section">
+    <section class="section experience-section">
 
-        <div class="section-head reveal">
-            <span>04</span>
-            <h2>Experience</h2>
+        <div class="section-heading reveal">
+            <p>04</p>
+            <h2>What I Focus On</h2>
         </div>
 
-        <div class="experience-list">
+        <div class="focus-grid">
 
-            <div class="experience-item reveal">
-                <div class="experience-number">01</div>
-                <div>
-                    <h3>IDOR 취약점 분석</h3>
-                    <p>사용자 소유권 검증을 추가하여 비인가 데이터 접근 차단</p>
-                </div>
+            <div class="focus-card reveal">
+                <span>01</span>
+                <h3>인증과 권한</h3>
+                <p>
+                    사용자의 역할과 데이터 소유권을 기준으로
+                    API 접근 권한을 검증합니다.
+                </p>
             </div>
 
-            <div class="experience-item reveal">
-                <div class="experience-number">02</div>
-                <div>
-                    <h3>Spring Security</h3>
-                    <p>사용자 역할에 따른 API 인증 · 인가 처리</p>
-                </div>
+            <div class="focus-card reveal">
+                <span>02</span>
+                <h3>보안</h3>
+                <p>
+                    IDOR와 같은 데이터 접근 문제를 분석하고
+                    적절한 검증 로직을 적용합니다.
+                </p>
             </div>
 
-            <div class="experience-item reveal">
-                <div class="experience-number">03</div>
-                <div>
-                    <h3>계층형 아키텍처</h3>
-                    <p>Controller · Service · Mapper · DTO 역할 분리</p>
-                </div>
-            </div>
-
-            <div class="experience-item reveal">
-                <div class="experience-number">04</div>
-                <div>
-                    <h3>Event 기반 알림</h3>
-                    <p>TransactionalEventListener를 활용한 커밋 이후 알림 처리</p>
-                </div>
+            <div class="focus-card reveal">
+                <span>03</span>
+                <h3>유지보수</h3>
+                <p>
+                    Controller, Service, Mapper, DTO의 역할을
+                    분리하여 구조적으로 개발합니다.
+                </p>
             </div>
 
         </div>
@@ -348,16 +402,27 @@
 
         <div class="contact-inner reveal">
 
-            <span class="contact-label">CONTACT</span>
+            <p class="contact-label">CONTACT</p>
 
             <h2>
-                함께 성장할<br>
-                <strong>기회를 기다립니다.</strong>
+                함께 만들어갈<br>
+                <strong>다음 프로젝트</strong>를 기다립니다.
             </h2>
 
+            <p>
+                새로운 환경에서 배우고 성장하며<br>
+                좋은 서비스를 만드는 개발자가 되겠습니다.
+            </p>
+
             <div class="contact-buttons">
-                <a href="https://github.com/mundaewon1" target="_blank">GitHub ↗</a>
-                <a href="mailto:your-email@example.com">Email ↗</a>
+                <a href="https://github.com/mundaewon1"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="mailto:your-email@example.com">
+                    Email
+                </a>
             </div>
 
         </div>
@@ -368,33 +433,12 @@
 
 
 <footer>
-    <span>MUNDAEWON</span>
-    <span>Backend Developer</span>
+    <p>MUNDAEWON</p>
+    <span>Backend Developer Portfolio · 2026</span>
 </footer>
 
 
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
-    }, {
-        threshold: 0.12
-    });
-
-    document.querySelectorAll('.reveal').forEach(el => {
-        observer.observe(el);
-    });
-
-
-    const header = document.querySelector('.header');
-
-    window.addEventListener('scroll', () => {
-        header.classList.toggle('scrolled', window.scrollY > 30);
-    });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
