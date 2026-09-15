@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문대원 | Backend Developer</title>
+    <title>문대원 | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="cursor-glow"></div>
+<div class="orb orb-blue"></div>
+<div class="orb orb-purple"></div>
+<div class="orb orb-cyan"></div>
+
 <header class="header">
-    <div class="nav">
+    <div class="header-inner">
         <a href="#" class="logo">MUNDAEWON<span>.</span></a>
+
         <nav>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -23,319 +29,499 @@
 
 <main>
 
-    <section class="hero">
-        <div class="hero-inner">
-            <p class="eyebrow">BACKEND DEVELOPER PORTFOLIO</p>
+    <!-- HERO -->
+    <section class="hero" id="about">
+        <div class="hero-left">
+
+            <p class="hero-small">FULL-STACK DEVELOPER</p>
+
             <h1>
-                문제를 분석하고<br>
-                <span>해결하는 개발자</span>
+                코드를 만들고,<br>
+                <span>서비스를 완성합니다.</span>
             </h1>
+
             <p class="hero-description">
-                Java와 Spring Boot를 기반으로 안정적인 서버와<br>
-                사용자에게 필요한 기능을 고민하며 개발합니다.
+                Frontend부터 Backend, Database까지 직접 연결하며
+                사용자가 실제로 사용할 수 있는 웹 서비스를 구현합니다.
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary">프로젝트 보기</a>
-                <a href="https://github.com/mundaewon1" target="_blank" class="btn secondary">GitHub ↗</a>
+                <a href="#projects" class="hero-btn main-btn">
+                    VIEW PROJECT <span>↗</span>
+                </a>
+
+                <a href="https://github.com/mundaewon1/2026-FULLSTACK"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="hero-btn dark-btn">
+                    GITHUB <span>↗</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <div class="section-title">
-            <p>01</p>
-            <h2>About Me</h2>
+
+    <!-- ABOUT / PROFILE -->
+    <section class="about-card reveal">
+
+        <div class="about-photo-card">
+            <img src="../images/profile.png" alt="문대원 프로필 사진">
         </div>
 
-        <div class="about-content">
-            <div class="about-intro">
-                <h3>
-                    단순히 기능을 구현하는 것보다<br>
-                    <strong>왜 필요한지 고민하는 개발자</strong>가 되고 싶습니다.
-                </h3>
+        <div class="about-main">
+            <div class="about-title">
+                <h2>문대원</h2>
+                <strong>FULL-STACK DEVELOPER</strong>
             </div>
 
             <div class="about-text">
-                <p>
-                    Java와 Spring Boot를 중심으로 웹 애플리케이션을 개발하고 있습니다.
-                    프로젝트를 진행하며 CRUD 구현뿐만 아니라 인증과 권한 처리,
-                    예외 상황, 데이터 무결성 및 보안까지 고려하는 개발의 중요성을 배웠습니다.
-                </p>
-                <p>
-                    특히 실제 서비스를 가정한 프로젝트에서 발생할 수 있는
-                    권한 검증 문제와 데이터 접근 문제를 직접 분석하고 개선하면서
-                    기능의 동작뿐 아니라 서비스의 안정성까지 생각하는 개발을 지향하고 있습니다.
-                </p>
+                <p>웹 서비스를 직접 설계하고 구현하며, 아이디어가 실제 서비스로 만들어지는 과정을 중요하게 생각합니다.</p>
+
+                <p>Java와 Spring Boot를 중심으로 Frontend부터 Backend, Database까지 연결하며 서비스의 전체 흐름을 구현하고 있습니다.</p>
+
+                <div class="about-keywords">
+                    <span>Problem Solving</span>
+                    <span>Full-Stack</span>
+                    <span>Security</span>
+                    <span>Web Service</span>
+                </div>
             </div>
         </div>
+
     </section>
 
-    <section id="skills" class="section skills-section">
-        <div class="section-title">
-            <p>02</p>
-            <h2>Tech Stack</h2>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+
+        <div class="section-title reveal">
+            <div>
+                <span>02</span>
+                <h2>Skills</h2>
+            </div>
+
+            <p>내가 서비스를 만들 때 사용하는 기술</p>
         </div>
 
-        <div class="skills-grid">
 
-            <div class="skill-card">
-                <div class="skill-number">01</div>
-                <h3>Backend</h3>
-                <div class="tags">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Spring Security</span>
-                    <span>MyBatis</span>
+        <div class="skills-grid reveal">
+
+            <div class="skill-card frontend">
+                <div class="skill-card-top">
+                    <span>01</span>
+                    <b>FRONTEND</b>
                 </div>
-            </div>
 
-            <div class="skill-card">
-                <div class="skill-number">02</div>
-                <h3>Database</h3>
-                <div class="tags">
-                    <span>Oracle</span>
-                    <span>SQL</span>
-                    <span>MyBatis</span>
-                </div>
-            </div>
+                <h3>
+                    사용자에게<br>
+                    보여지는 화면
+                </h3>
 
-            <div class="skill-card">
-                <div class="skill-number">03</div>
-                <h3>Frontend</h3>
-                <div class="tags">
+                <div class="skill-list">
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
+                    <span>AJAX</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Thymeleaf</span>
+                    <span>JSP</span>
+                    <span>Axios</span>
+                    <span>Ant Design</span>
                 </div>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-number">04</div>
-                <h3>Tools & ETC</h3>
-                <div class="tags">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>IntelliJ</span>
-                    <span>VS Code</span>
+
+            <div class="skill-card backend">
+                <div class="skill-card-top">
+                    <span>02</span>
+                    <b>BACKEND</b>
+                </div>
+
+                <h3>
+                    서비스를 움직이는<br>
+                    핵심 로직
+                </h3>
+
+                <div class="skill-list">
+                    <span>Java</span>
+                    <span>Spring</span>
+                    <span>Spring Boot</span>
+                    <span>Spring Security</span>
+                    <span>MyBatis</span>
+                    <span>JPA</span>
                     <span>Python</span>
                     <span>Django</span>
+                    <span>JWT</span>
                 </div>
             </div>
 
-        </div>
-    </section>
 
-    <section id="projects" class="section">
-        <div class="section-title">
-            <p>03</p>
-            <h2>Projects</h2>
-        </div>
-
-        <article class="project-card featured">
-
-            <div class="project-header">
-                <div>
-                    <p class="project-type">TEAM PROJECT · WEB SERVICE</p>
-                    <h3>MOIT</h3>
-                    <p class="project-subtitle">모임 관리 플랫폼</p>
+            <div class="skill-card database">
+                <div class="skill-card-top">
+                    <span>03</span>
+                    <b>DATABASE</b>
                 </div>
 
-                <a href="https://github.com/mundaewon1" target="_blank" class="project-link">
-                    GitHub ↗
-                </a>
-            </div>
+                <h3>
+                    데이터를 저장하고<br>
+                    관리하는 영역
+                </h3>
 
-            <p class="project-description">
-                모임 생성부터 회원 관리, 문의, 알림 등의 기능을 제공하는
-                모임 관리 웹 서비스입니다. Spring Boot 기반의 REST API를 구현하고
-                사용자 권한에 따른 기능 접근 제어를 적용했습니다.
-            </p>
-
-            <div class="project-tech">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>Spring Security</span>
-                <span>MyBatis</span>
-                <span>Oracle</span>
-                <span>JavaScript</span>
-            </div>
-
-            <div class="project-details">
-
-                <div class="detail-box">
-                    <h4>주요 기능</h4>
-                    <ul>
-                        <li>회원 및 모임 관리</li>
-                        <li>문의사항 및 답변 관리</li>
-                        <li>알림 기능</li>
-                        <li>관리자 페이지</li>
-                        <li>문의 AI 분류</li>
-                    </ul>
-                </div>
-
-                <div class="detail-box">
-                    <h4>담당 및 구현</h4>
-                    <ul>
-                        <li>Q&A CRUD 기능 구현</li>
-                        <li>문의 및 답변 권한 처리</li>
-                        <li>관리자 권한 검증</li>
-                        <li>페이지네이션 및 검색</li>
-                        <li>알림 이벤트 처리</li>
-                    </ul>
-                </div>
-
-                <div class="detail-box">
-                    <h4>기술적으로 고민한 부분</h4>
-                    <ul>
-                        <li>IDOR 취약점 분석 및 권한 검증</li>
-                        <li>사용자별 데이터 접근 제어</li>
-                        <li>Spring Security 기반 인증/인가</li>
-                        <li>트랜잭션 이후 알림 처리</li>
-                        <li>예외 상황 및 접근 권한 처리</li>
-                    </ul>
-                </div>
-
-            </div>
-        </article>
-
-        <article class="project-card">
-
-            <div class="project-header">
-                <div>
-                    <p class="project-type">PERSONAL / PRACTICE PROJECT</p>
-                    <h3>Python & Django</h3>
-                    <p class="project-subtitle">Python 웹 개발 학습 프로젝트</p>
+                <div class="skill-list">
+                    <span>Oracle</span>
+                    <span>MySQL</span>
+                    <span>SQL</span>
+                    <span>Redis</span>
                 </div>
             </div>
 
-            <p class="project-description">
-                Python 문법과 데이터 처리부터 Django 기반 웹 개발까지
-                학습하며 서버 개발의 기본 구조와 데이터 처리 방식을 익혔습니다.
-            </p>
 
-            <div class="project-tech">
-                <span>Python</span>
-                <span>Django</span>
-                <span>NumPy</span>
-                <span>HTML</span>
-                <span>CSS</span>
-            </div>
-
-        </article>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="section-title">
-            <p>04</p>
-            <h2>Development Experience</h2>
-        </div>
-
-        <div class="experience-list">
-
-            <div class="experience-item">
-                <span class="experience-number">01</span>
-                <div>
-                    <h3>CRUD를 넘어 권한까지 고려</h3>
-                    <p>
-                        단순히 API가 정상적으로 동작하는 것에서 끝내지 않고
-                        요청한 사용자가 해당 데이터에 접근할 수 있는지 검증하는
-                        과정의 중요성을 경험했습니다.
-                    </p>
+            <div class="skill-card tools">
+                <div class="skill-card-top">
+                    <span>04</span>
+                    <b>DEVOPS & TOOLS</b>
                 </div>
-            </div>
 
-            <div class="experience-item">
-                <span class="experience-number">02</span>
-                <div>
-                    <h3>IDOR 취약점 분석</h3>
-                    <p>
-                        로그인한 사용자라는 이유만으로 다른 사용자의 데이터를
-                        삭제할 수 있는 문제를 발견하고 소유권 및 관리자 권한을
-                        확인하는 방식으로 접근 제어를 강화했습니다.
-                    </p>
-                </div>
-            </div>
+                <h3>
+                    개발과 배포를 위한<br>
+                    환경과 도구
+                </h3>
 
-            <div class="experience-item">
-                <span class="experience-number">03</span>
-                <div>
-                    <h3>Spring Security 기반 인증·인가</h3>
-                    <p>
-                        사용자 정보를 기반으로 일반 회원, 모임장, 관리자 등
-                        역할에 따라 API 접근 권한을 구분하고 검증했습니다.
-                    </p>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <span class="experience-number">04</span>
-                <div>
-                    <h3>유지보수하기 좋은 구조 고민</h3>
-                    <p>
-                        Controller, Service, Mapper, DTO를 역할에 맞게 분리하고
-                        비즈니스 로직과 데이터 접근 로직을 구분하며 개발했습니다.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section philosophy">
-        <div class="quote">
-            <p class="eyebrow">DEVELOPMENT PHILOSOPHY</p>
-            <h2>
-                "동작하는 코드에서<br>
-                <span>신뢰할 수 있는 코드</span>로"
-            </h2>
-            <p>
-                기능 구현에만 집중하지 않고 보안, 예외 처리,
-                유지보수성과 사용자 경험까지 고려하는 개발자가 되겠습니다.
-            </p>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <div class="section-title">
-            <p>05</p>
-            <h2>Contact</h2>
-        </div>
-
-        <div class="contact-content">
-            <h3>함께 성장할 수 있는 기회를 기다리고 있습니다.</h3>
-
-            <div class="contact-links">
-                <a href="https://github.com/mundaewon1" target="_blank">
+                <div class="skill-list">
+                    <span>Git</span>
                     <span>GitHub</span>
-                    <span>↗</span>
-                </a>
+                    <span>Linux</span>
+                    <span>AWS EC2</span>
+                    <span>CI/CD</span>
+                    <span>GitHub Actions</span>
+                    <span>Gradle</span>
+                </div>
+            </div>
 
-                <a href="mailto:your-email@example.com">
-                    <span>Email</span>
-                    <span>↗</span>
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT -->
+    <section class="section project-section" id="projects">
+
+        <div class="section-title reveal">
+            <div>
+                <span>03</span>
+                <h2>Project</h2>
+            </div>
+
+            <p>가장 집중해서 개발한 프로젝트</p>
+        </div>
+
+
+        <article class="project-card reveal">
+
+            <div class="project-visual">
+
+                <div class="project-visual-top">
+                    <span>TEAM PROJECT</span>
+                    <span>WEB SERVICE</span>
+                </div>
+
+                <div class="project-logo">
+                    MOIT
+                </div>
+
+                <p>
+                    모임 생성부터 관리까지<br>
+                    하나의 서비스에서
+                </p>
+
+                <div class="project-circle">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <div class="project-header">
+
+                    <div>
+                        <span class="project-number">PROJECT 01</span>
+
+                        <h2>MOIT</h2>
+
+                        <p>
+                            모임 생성과 관리 등 다양한 기능을 제공하는 웹 서비스입니다.
+                        </p>
+                    </div>
+
+                    <a href="https://github.com/mundaewon1/mundaewon30"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        GitHub ↗
+                    </a>
+
+                </div>
+
+
+                <div class="project-description">
+
+                    <div>
+                        <small>ROLE</small>
+                        <strong>FULL-STACK</strong>
+                    </div>
+
+                    <p>
+                        Frontend와 Backend를 연결하고 Database와
+                        인증·인가를 연동하여 하나의 웹 서비스로 구현했습니다.
+                    </p>
+
+                </div>
+
+
+                <div class="project-tech">
+                    <span class="tech-java">Java</span>
+                    <span class="tech-spring">Spring Boot</span>
+                    <span class="tech-security">Spring Security</span>
+                    <span class="tech-mybatis">MyBatis</span>
+                    <span class="tech-jpa">JPA</span>
+                    <span class="tech-oracle">Oracle</span>
+                    <span class="tech-html">HTML</span>
+                    <span class="tech-css">CSS</span>
+                    <span class="tech-js">JavaScript</span>
+                    <span class="tech-react">React</span>
+                    <span class="tech-next">Next.js</span>
+                    <span class="tech-redis">Redis</span>
+                    <span class="tech-aws">AWS</span>
+                    <span class="tech-cicd">CI/CD</span>
+                </div>
+
+
+                <div class="version-area">
+
+                    <div class="version-heading">
+                        <div>
+                            <span>DEVELOPMENT</span>
+                            <strong>VERSION HISTORY</strong>
+                        </div>
+
+                        <small>V1 → V2 → V3</small>
+                    </div>
+
+
+                    <div class="versions">
+
+                        <a href="https://www.youtube.com/watch?si=E-J_moTlCmb9uPHQ&v=PCCIJsmrKG8&feature=youtu.be"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="version v1">
+
+                            <div class="version-top">
+                                <span>V1</span>
+                                <i>↗</i>
+                            </div>
+
+                            <strong>INITIAL</strong>
+                            <small>초기 구현</small>
+
+                        </a>
+
+
+                        <a href="https://www.youtube.com/watch?v=eWmBrzBqTeU"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="version v2">
+
+                            <div class="version-top">
+                                <span>V2</span>
+                                <i>↗</i>
+                            </div>
+
+                            <strong>EXPANSION</strong>
+                            <small>기능 확장</small>
+
+                        </a>
+
+
+                        <a href="https://www.youtube.com/watch?v=MbnXIlCf5fw"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="version v3">
+
+                            <div class="version-top">
+                                <span>V3</span>
+                                <i>↗</i>
+                            </div>
+
+                            <strong>FINAL</strong>
+                            <small>최종 구현</small>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+
+        <div class="section-title reveal">
+            <div>
+                <span>04</span>
+                <h2>Experience</h2>
+            </div>
+
+            <p>프로젝트를 통해 경험한 개발 영역</p>
+        </div>
+
+
+        <div class="experience-grid reveal">
+
+            <div class="experience-card experience-blue">
+                <span>01</span>
+
+                <div>
+                    <small>DEVELOPMENT</small>
+                    <h3>Full-Stack</h3>
+                    <p>
+                        Frontend와 Backend를 연결하고 Database까지
+                        연동하여 서비스를 구현했습니다.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="experience-card experience-purple">
+                <span>02</span>
+
+                <div>
+                    <small>SECURITY</small>
+                    <h3>인증 · 인가</h3>
+                    <p>
+                        Spring Security를 활용하여 사용자별
+                        접근 권한을 구현했습니다.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="experience-card experience-orange">
+                <span>03</span>
+
+                <div>
+                    <small>ANALYSIS</small>
+                    <h3>보안 취약점 분석</h3>
+                    <p>
+                        IDOR와 같은 접근 제어 문제를 분석하고
+                        권한 검증을 적용했습니다.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="experience-card experience-green">
+                <span>04</span>
+
+                <div>
+                    <small>Q&A</small>
+                    <h3>문의 기능 개발</h3>
+                    <p>
+                        문의 작성부터 답변, 수정, 삭제까지 Q&A 기능을 구현하고
+                        OpenAI API를 활용한 문의 내용 분석 및 필터 기능을 적용했습니다.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+
+        <div class="contact-card reveal">
+
+            <div class="contact-decoration">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+            <div class="contact-content">
+                <span>LET'S BUILD SOMETHING</span>
+
+                <h2>새로운 협업을 기다리고 있습니다.</h2>
+<h3>함께할 기회가 있다면 언제든지 편하게 연락해주세요.</h3>
+            </div>
+
+
+            <div class="contact-buttons">
+                <a href="https://github.com/mundaewon1/2026-FULLSTACK" target="_blank" rel="noopener noreferrer" class="hero-btn dark-btn">
+                    GITHUB <span>↗</span>
+                </a>
+                <a href="mailto:less40@naver.com" class="hero-btn main-btn">
+                    EMAIL <span>↗</span>
                 </a>
             </div>
+
         </div>
+
     </section>
 
 </main>
 
-<footer class="footer">
-    <p>© 2026 MUNDAEWON. All rights reserved.</p>
-    <p>Backend Developer Portfolio</p>
+
+<footer>
+    <span>© 2026 MUNDAEWON.</span>
+    <span>FULL-STACK DEVELOPER</span>
 </footer>
 
-<script>
-    const header = document.querySelector('.header');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+<script>
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.1
+    }
+);
+
+document.querySelectorAll(".reveal").forEach((element) => {
+    observer.observe(element);
+});
+
+
+const cursorGlow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", (event) => {
+    cursorGlow.style.left = event.clientX + "px";
+    cursorGlow.style.top = event.clientY + "px";
+});
+
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+    header.classList.toggle("scrolled", window.scrollY > 30);
+});
+
 </script>
 
 </body>
