@@ -8,9 +8,16 @@
 </head>
 <body>
 
+<div class="bubble bubble1"></div>
+<div class="bubble bubble2"></div>
+<div class="bubble bubble3"></div>
+<div class="bubble bubble4"></div>
+<div class="bubble bubble5"></div>
+<div class="bubble bubble6"></div>
+
 <header class="header">
     <div class="nav">
-        <a href="#" class="logo">MUN DAeWON <span>✦</span></a>
+        <a href="#" class="logo">MUNDAEWON<span>.</span></a>
 
         <nav>
             <a href="#about">About</a>
@@ -21,104 +28,75 @@
     </div>
 </header>
 
-
 <main>
 
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-inner">
 
-            <div class="hero-badge">
-                ☁ Backend Developer Portfolio
-            </div>
+        <div class="hero-bg"></div>
+
+        <div class="hero-inner reveal">
+
+            <span class="badge">BACKEND DEVELOPER</span>
 
             <h1>
                 문제를 분석하고<br>
-                <strong>해결하는 백엔드 개발자</strong>
+                <strong>해결하는 개발자</strong>
             </h1>
 
-            <div class="hero-tags">
-                <span>#Java</span>
-                <span>#SpringBoot</span>
-                <span>#Security</span>
-                <span>#Oracle</span>
-                <span>#ProblemSolving</span>
+            <p class="hero-text">
+                Java와 Spring Boot를 기반으로<br>
+                안정적인 웹 서비스를 개발합니다.
+            </p>
+
+            <div class="hero-tech">
+                <span class="java">Java</span>
+                <span class="spring">Spring Boot</span>
+                <span class="security">Spring Security</span>
+                <span class="oracle">Oracle</span>
+                <span class="mybatis">MyBatis</span>
             </div>
 
-            <div class="profile-card">
-
-                <div class="profile-avatar">
-                    <div>DW</div>
-                </div>
-
-                <div class="profile-info">
-                    <h2>문대원</h2>
-                    <p class="profile-role">Backend Developer</p>
-
-                    <p class="profile-description">
-                        Java와 Spring Boot를 중심으로 웹 서비스를 개발합니다.<br>
-                        기능 구현뿐 아니라 보안과 권한, 데이터의 안정성까지 고민합니다.
-                    </p>
-
-                    <div class="profile-buttons">
-                        <a href="#projects" class="button primary">프로젝트 보기</a>
-                        <a href="https://github.com/mundaewon1" target="_blank" class="button">GitHub ↗</a>
-                        <a href="mailto:your-email@example.com" class="button">Email</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="quick-info">
-                <div>
-                    <span>FOCUS</span>
-                    <strong>Backend Development</strong>
-                </div>
-
-                <div>
-                    <span>MAIN STACK</span>
-                    <strong>Java · Spring Boot</strong>
-                </div>
-
-                <div>
-                    <span>INTEREST</span>
-                    <strong>Security · Architecture</strong>
-                </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-main">Projects</a>
+                <a href="https://github.com/mundaewon1" target="_blank" class="btn-sub">GitHub</a>
             </div>
 
         </div>
+
+        <div class="scroll-down">
+            <span>SCROLL</span>
+            <i></i>
+        </div>
+
     </section>
 
 
     <!-- ABOUT -->
     <section id="about" class="section">
 
-        <div class="section-heading">
+        <div class="section-head reveal">
             <span>01</span>
             <h2>About Me</h2>
         </div>
 
-        <div class="about-card">
+        <div class="about-box reveal">
 
-            <div>
-                <p class="card-label">HELLO 👋</p>
-
+            <div class="about-title">
+                <p>BACKEND DEVELOPER</p>
                 <h3>
-                    단순히 기능을 구현하는 것보다<br>
-                    <strong>왜 필요한지 고민합니다.</strong>
+                    기능 구현을 넘어<br>
+                    <strong>안전한 서비스를 고민합니다.</strong>
                 </h3>
             </div>
 
-            <div class="about-text">
+            <div class="about-description">
                 <p>
-                    Java와 Spring Boot 기반의 웹 애플리케이션을 개발하며
-                    CRUD, 인증·인가, 데이터 접근 제어 등을 경험했습니다.
+                    Java와 Spring Boot를 중심으로 웹 서비스를 개발하고 있습니다.
                 </p>
-
                 <p>
-                    프로젝트에서 발생한 IDOR 취약점을 직접 분석하고
-                    권한 검증 로직을 개선하면서
-                    안전한 서비스 구현의 중요성을 배웠습니다.
+                    인증·인가와 사용자별 데이터 접근 제어를 구현하고,
+                    프로젝트에서 발견한 IDOR 취약점을 분석하고 개선한 경험이 있습니다.
                 </p>
             </div>
 
@@ -128,92 +106,90 @@
 
 
     <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="skills" class="section skills-section">
 
-        <div class="section-heading">
+        <div class="section-head reveal">
             <span>02</span>
             <h2>Tech Stack</h2>
         </div>
 
-        <div class="skills-card">
+        <div class="skills-container">
 
-            <div class="skill-group">
-                <div class="skill-title">
+            <div class="skill-block reveal">
+                <div class="skill-name">
                     <span>01</span>
                     <h3>Backend</h3>
                 </div>
 
-                <div class="skill-tags big">
-                    <span>☕ Java</span>
-                    <span>🍃 Spring</span>
-                    <span>🚀 Spring Boot</span>
-                    <span>🔐 Spring Security</span>
-                    <span>🧩 MyBatis</span>
+                <div class="skill-buttons">
+                    <span class="skill java">Java</span>
+                    <span class="skill spring">Spring</span>
+                    <span class="skill springboot">Spring Boot</span>
+                    <span class="skill security">Spring Security</span>
+                    <span class="skill mybatis">MyBatis</span>
                 </div>
             </div>
 
 
-            <div class="skill-group">
-                <div class="skill-title">
+            <div class="skill-block reveal">
+                <div class="skill-name">
                     <span>02</span>
                     <h3>Database</h3>
                 </div>
 
-                <div class="skill-tags big">
-                    <span>🔶 Oracle</span>
-                    <span>🐬 MySQL</span>
-                    <span>🗄️ SQL</span>
-                    <span>JPA</span>
+                <div class="skill-buttons">
+                    <span class="skill oracle">Oracle</span>
+                    <span class="skill mysql">MySQL</span>
+                    <span class="skill sql">SQL</span>
+                    <span class="skill jpa">JPA</span>
                 </div>
             </div>
 
 
-            <div class="skill-group">
-                <div class="skill-title">
+            <div class="skill-block reveal">
+                <div class="skill-name">
                     <span>03</span>
                     <h3>Frontend</h3>
                 </div>
 
-                <div class="skill-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>jQuery</span>
-                    <span>AJAX</span>
-                    <span>React</span>
+                <div class="skill-buttons">
+                    <span class="skill html">HTML</span>
+                    <span class="skill css">CSS</span>
+                    <span class="skill javascript">JavaScript</span>
+                    <span class="skill jquery">jQuery</span>
+                    <span class="skill ajax">AJAX</span>
+                    <span class="skill react">React</span>
                 </div>
             </div>
 
 
-            <div class="skill-group">
-                <div class="skill-title">
+            <div class="skill-block reveal">
+                <div class="skill-name">
                     <span>04</span>
-                    <h3>Dev & Tools</h3>
+                    <h3>Tools</h3>
                 </div>
 
-                <div class="skill-tags">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Linux</span>
-                    <span>AWS EC2</span>
-                    <span>IntelliJ</span>
-                    <span>VS Code</span>
+                <div class="skill-buttons">
+                    <span class="skill git">Git</span>
+                    <span class="skill github">GitHub</span>
+                    <span class="skill linux">Linux</span>
+                    <span class="skill aws">AWS</span>
+                    <span class="skill intellij">IntelliJ</span>
+                    <span class="skill vscode">VS Code</span>
                 </div>
             </div>
 
 
-            <div class="skill-group">
-                <div class="skill-title">
+            <div class="skill-block reveal">
+                <div class="skill-name">
                     <span>05</span>
                     <h3>Other</h3>
                 </div>
 
-                <div class="skill-tags">
-                    <span>Python</span>
-                    <span>Django</span>
-                    <span>NumPy</span>
-                    <span>Markdown</span>
-                    <span>AI Tools</span>
+                <div class="skill-buttons">
+                    <span class="skill python">Python</span>
+                    <span class="skill django">Django</span>
+                    <span class="skill numpy">NumPy</span>
                 </div>
             </div>
 
@@ -222,70 +198,69 @@
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- PROJECT -->
     <section id="projects" class="section">
 
-        <div class="section-heading">
+        <div class="section-head reveal">
             <span>03</span>
             <h2>Projects</h2>
         </div>
 
-
-        <article class="project-card featured">
+        <article class="project-card reveal">
 
             <div class="project-top">
 
                 <div>
-                    <span class="project-badge">TEAM PROJECT</span>
+                    <span class="project-type">TEAM PROJECT</span>
                     <h3>MOIT</h3>
                     <p>모임 관리 플랫폼</p>
                 </div>
 
-                <a href="https://github.com/mundaewon1" target="_blank">
+                <a href="https://github.com/mundaewon1" target="_blank" class="github-link">
                     GitHub ↗
                 </a>
 
             </div>
 
 
-            <p class="project-summary">
-                모임 생성부터 회원 관리, 문의, 알림까지 제공하는
-                모임 관리 웹 서비스
+            <p class="project-description">
+                모임 생성, 회원 관리, 문의, 답변, 알림 및 관리자 기능을 제공하는
+                웹 서비스
             </p>
 
 
             <div class="project-stack">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>Spring Security</span>
-                <span>MyBatis</span>
-                <span>Oracle</span>
-                <span>JavaScript</span>
+                <span class="java">Java</span>
+                <span class="springboot">Spring Boot</span>
+                <span class="security">Spring Security</span>
+                <span class="mybatis">MyBatis</span>
+                <span class="oracle">Oracle</span>
+                <span class="javascript">JavaScript</span>
             </div>
 
 
-            <div class="project-content">
+            <div class="project-info">
 
-                <div>
-                    <span class="project-label">MY ROLE</span>
+                <div class="info-column">
+                    <span class="info-title">담당 기능</span>
 
                     <ul>
                         <li>Q&A CRUD</li>
-                        <li>문의·답변 권한 처리</li>
+                        <li>문의 · 답변 권한 처리</li>
                         <li>관리자 권한 검증</li>
-                        <li>검색 / 페이지네이션</li>
+                        <li>검색 · 페이지네이션</li>
                         <li>알림 이벤트 처리</li>
                     </ul>
                 </div>
 
 
-                <div>
-                    <span class="project-label">KEY POINT</span>
+                <div class="info-column">
+                    <span class="info-title">주요 경험</span>
 
                     <ul>
-                        <li>IDOR 취약점 분석</li>
+                        <li>IDOR 취약점 분석 및 개선</li>
                         <li>사용자별 데이터 접근 제어</li>
-                        <li>Spring Security 인증·인가</li>
+                        <li>Spring Security 인증 · 인가</li>
                         <li>AI 문의 분류</li>
                         <li>트랜잭션 이후 알림 처리</li>
                     </ul>
@@ -296,28 +271,24 @@
         </article>
 
 
-        <article class="project-card">
+        <article class="project-card small-project reveal">
 
             <div class="project-top">
 
                 <div>
-                    <span class="project-badge">PRACTICE PROJECT</span>
+                    <span class="project-type">PRACTICE PROJECT</span>
                     <h3>Python & Django</h3>
                     <p>Python 웹 개발 학습 프로젝트</p>
                 </div>
 
             </div>
 
-            <p class="project-summary">
-                Python과 Django를 활용한 웹 개발 및 데이터 처리 학습
-            </p>
-
             <div class="project-stack">
-                <span>Python</span>
-                <span>Django</span>
-                <span>NumPy</span>
-                <span>HTML</span>
-                <span>CSS</span>
+                <span class="python">Python</span>
+                <span class="django">Django</span>
+                <span class="numpy">NumPy</span>
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
             </div>
 
         </article>
@@ -328,47 +299,43 @@
     <!-- EXPERIENCE -->
     <section class="section">
 
-        <div class="section-heading">
+        <div class="section-head reveal">
             <span>04</span>
             <h2>Experience</h2>
         </div>
 
-        <div class="experience-grid">
+        <div class="experience-list">
 
-            <div class="experience-card">
-                <span>🔐</span>
-                <h3>IDOR 취약점 분석</h3>
-                <p>
-                    사용자 권한 검증이 없는 데이터 삭제 로직을 발견하고
-                    소유권 검증을 적용했습니다.
-                </p>
+            <div class="experience-item reveal">
+                <div class="experience-number">01</div>
+                <div>
+                    <h3>IDOR 취약점 분석</h3>
+                    <p>사용자 소유권 검증을 추가하여 비인가 데이터 접근 차단</p>
+                </div>
             </div>
 
-            <div class="experience-card">
-                <span>🛡️</span>
-                <h3>인증 · 인가</h3>
-                <p>
-                    Spring Security와 사용자 역할을 기반으로
-                    API 접근 권한을 구분했습니다.
-                </p>
+            <div class="experience-item reveal">
+                <div class="experience-number">02</div>
+                <div>
+                    <h3>Spring Security</h3>
+                    <p>사용자 역할에 따른 API 인증 · 인가 처리</p>
+                </div>
             </div>
 
-            <div class="experience-card">
-                <span>🏗️</span>
-                <h3>계층형 구조</h3>
-                <p>
-                    Controller · Service · Mapper · DTO를 분리하여
-                    역할과 책임을 구분했습니다.
-                </p>
+            <div class="experience-item reveal">
+                <div class="experience-number">03</div>
+                <div>
+                    <h3>계층형 아키텍처</h3>
+                    <p>Controller · Service · Mapper · DTO 역할 분리</p>
+                </div>
             </div>
 
-            <div class="experience-card">
-                <span>🔔</span>
-                <h3>이벤트 기반 알림</h3>
-                <p>
-                    TransactionalEventListener를 활용해
-                    트랜잭션 커밋 이후 알림을 처리했습니다.
-                </p>
+            <div class="experience-item reveal">
+                <div class="experience-number">04</div>
+                <div>
+                    <h3>Event 기반 알림</h3>
+                    <p>TransactionalEventListener를 활용한 커밋 이후 알림 처리</p>
+                </div>
             </div>
 
         </div>
@@ -379,23 +346,18 @@
     <!-- CONTACT -->
     <section id="contact" class="contact-section">
 
-        <div class="contact-inner">
+        <div class="contact-inner reveal">
 
-            <span class="contact-badge">LET'S CONNECT ✨</span>
+            <span class="contact-label">CONTACT</span>
 
             <h2>
-                함께 성장할 수 있는<br>
-                <strong>기회를 기다리고 있습니다.</strong>
+                함께 성장할<br>
+                <strong>기회를 기다립니다.</strong>
             </h2>
 
             <div class="contact-buttons">
-                <a href="https://github.com/mundaewon1" target="_blank">
-                    GitHub ↗
-                </a>
-
-                <a href="mailto:your-email@example.com">
-                    Email ↗
-                </a>
+                <a href="https://github.com/mundaewon1" target="_blank">GitHub ↗</a>
+                <a href="mailto:your-email@example.com">Email ↗</a>
             </div>
 
         </div>
@@ -406,12 +368,27 @@
 
 
 <footer>
-    <span>© 2026 MUNDAEWON</span>
+    <span>MUNDAEWON</span>
     <span>Backend Developer</span>
 </footer>
 
 
 <script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.12
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+    });
+
+
     const header = document.querySelector('.header');
 
     window.addEventListener('scroll', () => {
