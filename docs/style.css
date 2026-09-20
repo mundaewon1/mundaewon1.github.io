@@ -1603,4 +1603,18 @@ footer {
         gap: 7px;
     }
 
+    .project-links {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    }
+    
+    .ppt-link {
+        background: var(--blue);
+    }
+    
+    .ppt-link:hover {
+        background: #1d4ed8;
+    }
+
 }
