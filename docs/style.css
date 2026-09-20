@@ -317,7 +317,7 @@ main {
 }
 
 .hero-description {
-    max-width: 630px;
+    max-width: 570px;
     margin-top: 27px;
 
     color: var(--muted);
