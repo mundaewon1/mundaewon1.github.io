@@ -1603,6 +1603,9 @@ footer {
         gap: 7px;
     }
 
+}
+
+
     .project-links {
     display: flex;
     align-items: flex-start;
@@ -1617,4 +1620,3 @@ footer {
         background: #1d4ed8;
     }
 
-}
